@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Categories</title>
+
+    <link rel="stylesheet" href="/pageStyleSheets/entries_manager.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="top-right" id="topRight">
+            <i class="fa-regular fa-envelope" id="iconMail"></i>
+            <i class="fa-regular fa-bell" id="iconBell"></i>
+            <img src="https://i.pravatar.cc/40" alt="Avatar" id="avatar">
+        </div>
+    </header>
+
+    <div class="container" id="container">
+
+        <aside class="sidebar" id="sidebar">
+            <a href="./user_mananger.html" id="btnManageUsers">
+                <i class="fa-solid fa-users"></i> Manage Users
+            </a>
+            <a href="./entries_manager.html" id="btnManageEntries" class="active">
+                <i class="fa-solid fa-table-list"></i> Manage Entries
+            </a>
+            <a href="./article_mananger_ADMIN.html" id="btnManageArticle">
+                <i class="fa-solid fa-newspaper"></i> Manage Article
+            </a>
+            <a href="/pagesHTML/login.html" id="btnLogout">
+                <i class="fa-solid fa-right-from-bracket"></i> Log out
+            </a>
+        </aside>
+
+        <main class="content" id="content">
+
+            <div class="search-box-container">
+                <div class="search-box" id="searchBox">
+                    <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                    <input type="text" id="searchInput" placeholder="Search Article Categories">
+                </div>
+            </div>
+
+            <div class="main-content-card">
+                <div class="top-bar" id="topBar">
+                    <h3 id="pageTitle">
+                        <i class="fa-solid fa-folder" id="titleIcon"></i> Manage Categories
+                    </h3>
+                </div>
+
+                <div class="add-category" id="addCategoryForm">
+                    <label for="categoryInput" id="categoryLabel">Category Name:</label>
+                    <input type="text" id="categoryInput" placeholder="Enter category name">
+                    <button id="addBtn">Add Category</button>
+                </div>
+
+                <div class="category-list-header" id="categoryListHeader">
+                    <i class="fa-solid fa-list" id="listIcon"></i> Category List
+                </div>
+
+                <table class="category-table" id="categoryTable">
+                    <thead id="tableHead">
+                        <tr id="tableHeaderRow">
+                            <th id="colNumber">#</th>
+                            <th id="colCategoryName">Category Name</th>
+                            <th id="colActions">Actions</th>
+                        
+                    </thead>
+                    <tbody id="categoryBody">
+                        <tr>
+                            <td>1</td>
+                            <td>Tên Danh Mục Ví Dụ 1</td>
+                            <td>
+                                <button class="btn-action btn-edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="btn-action btn-delete"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Tên Danh Mục Ví Dụ 2</td>
+                            <td>
+                                <button class="btn-action btn-edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="btn-action btn-delete"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> </main>
+    </div>
+    <section class="pagination">
+    <button class="page-nav" id="prev-page"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+    <div class="page-numbers" id="pagination-numbers">
+         <button class="page-num active">1</button>
+            <button class="page-num">2</button>
+            <button class="page-num">3</button>
+            <span>...</span>
+            <button class="page-num">10</button>
+    </div>
+    <button class="page-nav" id="next-page">Next <i class="fa-solid fa-arrow-right"></i></button>
+    
+</section> 
+</body>
+<!-- <script src="/page_Functions/dataDEMO.js"></script> -->
+<script src="/page_Functions/entries_mananger.js"></script>
+</html>

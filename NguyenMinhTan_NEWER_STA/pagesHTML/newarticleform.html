@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/pageStyleSheets/create_form.css">
+</head>
+<body>
+    <div class="modal-overlay">
+    <div class="add-article-container">
+        <button id="close-modal" class="close-btn">&times;</button>
+
+        <h2 class="form-title">Add New Article</h2>
+
+        <form id="add-article-form">
+            <div class="form-group">
+                <label for="article-title">Title:</label>
+                <input type="text" id="article-title" placeholder="Enter article title">
+            </div>
+
+            <div class="form-group">
+                <label for="article-category">Article Categories:</label>
+                <select id="article-category">
+                    <option value="">Select Category</option>
+                    <option value="Nhật ký học tập">Nhật ký học tập</option>
+                    <option value="Nhật ký mục tiêu và ké hoạch">Nhật ký mục tiêu và ké hoạch</option>
+                    <option value="Nhật ký trải nghiệm học qua đời sống">Nhật ký trải nghiệm học qua đời sống</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="article-mood">Mood:</label>
+                <select id="article-mood">
+                    <option value="happy">🥰Happy</option>
+                    <option value="sad">😢Sad</option>
+                    <option value="productive">💼Productive</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="article-content">Content:</label>
+                <textarea id="article-content" rows="6"></textarea>
+            </div>
+
+            <div class="form-group status-group">
+                <label>Status</label>
+                <div class="radio-options">
+                    <label>
+                        <input type="radio" name="status" value="Public" id="status-public" checked> 
+                        public
+                    </label>
+                    <label>
+                        <input type="radio" name="status" value="Private" id="status-private"> 
+                        private
+                    </label>
+                </div>
+            </div>
+
+            <div class="upload-section" id="drop-area">
+                <div class="upload-icon">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </div>
+                <p>Browse and choose the files you want to upload from your computer</p>
+                <input type="file" id="article-image" hidden accept="image/*">
+            </div>
+
+            <button type="submit" id="add-btn" class="submit-btn">Add</button>
+        </form>
+    </div>
+</div>
+</body>
+<script src="/page_Functions/dataDEMO.js"></script>
+<script src="/page_Functions/newarticleform.js"></script>
+</html>

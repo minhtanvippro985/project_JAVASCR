@@ -1,0 +1,68 @@
+/* login */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .illustration-section {
+        justify-content: center;
+    }
+    .social-signin {
+        justify-content: center;
+    }
+}
+
+
+/* register */
+@media (max-width: 850px) {
+    .wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .content-left h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .form-card {
+        margin-top: 30px;
+    }
+}
+
+/* create form */
+@media (max-width: 768px) {
+    .add-article-container {
+        padding: 20px; /* Thu nhỏ padding bên trong form */
+    }
+
+    .status-group {
+        flex-direction: column; /* Chuyển trạng thái từ hàng ngang sang hàng dọc */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .radio-options {
+        gap: 15px;
+    }
+}
+
+
+
+@media (max-height: 700px), (max-width: 768px) {
+    .add-article-container {
+        padding: 20px; 
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .form-group {
+        margin-bottom: 12px; 
+    }
+
+    .upload-section {
+        margin: 10px 0; 
+        padding: 10px;
+    }
+}

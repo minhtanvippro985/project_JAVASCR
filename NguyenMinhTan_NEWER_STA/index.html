@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./pageStyleSheets/index.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/assets/imagers/icon.png" alt="logo">
+                <span>RIKKEI_EDU_BLOG</span>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search for articles" id="search-article-input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+           <div class="header-right" id="header-auth-section">
+    <div class="user-profile">
+        <img src="/assets/imagers/user_PFP.png" alt="Avatar" class="avatar-img" id="user-avatar">
+        
+        <div class="dropdown-menu">
+            <div class="user-info">
+                <img src="/assets/imagers/user_PFP.png" alt="Avatar" id="user-dropdown-ava">
+                <div>
+                    <strong id="display-fullname">Rikkei</strong>
+                    <p id="display-email">rikkei@gmail.com</p>
+                </div>
+            </div>
+            <hr>
+            <ul>
+                <li>View profile</li>
+                
+                <li>
+                    <label for="change-avatar-input" style="cursor: pointer; display: block; width: 100%;">
+                        Update Profile picture
+                    </label>
+                    <input type="file" id="change-avatar-input" accept="image/*" style="display: none;">
+                </li>
+                
+                <li>Change password</li>
+                <li class="logout" id="logout-btn">Log out</li>
+            </ul>
+        </div>
+    </div>
+</div>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="recent-posts-section">
+            <h2 class="section-heading">Recent blog posts</h2>
+            <div class="recent-grid">
+                <div class="recent-main-card">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
+                        alt="Office">
+                    <div class="card-content">
+                        <p class="post-date">Date: 2025-03-25</p>
+                        <h3 class="post-title">A Productive Day at Work</h3>
+                        <p class="post-excerpt">Today was a really productive day at work. I managed to finish a report
+                            ahead of schedule and received positive feedback from my manager.</p>
+                        <span class="category-tag tag-blue">Daily Journal</span>
+                    </div>
+                </div>
+
+                <div class="recent-side-cards">
+                    <div class="side-card">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=400"
+                            alt="Interview">
+                        <div class="side-card-content">
+                            <p class="post-date">Date: 2025-03-24</p>
+                            <h3 class="post-title">My First Job Interview Experience</h3>
+                            <p class="post-excerpt">I had my first job interview today! I was nervous at first, but as
+                                the conversation went on, I felt more confident.</p>
+                            <span class="category-tag tag-purple">Work & Career</span>
+                        </div>
+                    </div>
+
+                    <div class="side-card">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=400"
+                            alt="Thinking">
+                        <div class="side-card-content">
+                            <p class="post-date">Date: 2025-03-23</p>
+                            <h3 class="post-title">Overthinking Everything</h3>
+                            <p class="post-excerpt">Lately, I have been overthinking everything, from small decisions to
+                                bigger life choices. I know I should trust myself!</p>
+                            <span class="category-tag tag-green">Personal Thoughts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="all-posts-section">
+            <div class="filter-nav">
+                <div class="filter-main">
+                    <a href="javascript:void(0)" class="active" id="view-all-posts-btn" onclick="">All blog posts</a>
+                    <a href="javascript:void(0)" id="view-my-post-btn" onclick="">All my posts</a>
+                </div>
+                <div class="filter-categories" id="filter-post-btn">
+                    <span>Daily Journal</span>
+                    <span>Work & Career</span>
+                    <span>Personal Thoughts</span>
+                    <span>Emotions & Feelings</span>
+                </div>
+            </div>
+            <div id="article-container">
+                <div class="article-grid">
+            <div class="article-card">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=400" alt="">
+                <div class="card-body">
+                    <p class="post-date">Date: 2025-02-25</p>
+                    <h3>A Productive Day at Work <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+                    <p>Today was a really productive day at work. I managed to finish a report ahead of schedule...</p>
+                    <div class="card-footer">
+                        <span class="category-tag">Daily Journal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=400" alt="">
+                <div class="card-body">
+                    <p class="post-date">Date: 2025-02-24</p>
+                    <h3>My First Job Interview Experience <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+                    <p>I had my first job interview today! I was nervous at first, but as the conversation went on...</p>
+                    <div class="card-footer">
+                        <span class="category-tag tag-purple">Work & Career</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=400" alt="">
+                <div class="card-body">
+                    <p class="post-date">Date: 2025-02-23</p>
+                    <h3>Overthinking Everything <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+                    <p>Lately, I have been overthinking everything, from small decisions to bigger life choices...</p>
+                    <div class="card-footer">
+                        <span class="category-tag tag-green">Personal Thoughts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+            
+        </section>
+    </main>
+<section class="pagination">
+    <button class="page-nav" id="prev-page"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+    <div class="page-numbers" id="pagination-numbers">
+         <button class="page-num active">1</button>
+            <button class="page-num">2</button>
+            <button class="page-num">3</button>
+            <span>...</span>
+            <button class="page-num">10</button>
+    </div>
+    <button class="page-nav" id="next-page">Next <i class="fa-solid fa-arrow-right"></i></button>
+    
+</section> 
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>MY BLOG</h2>
+                </div>
+
+                <div class="footer-column about">
+                    <h3>About Rareblocks</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta
+                        lectus ridiculus in mattis.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Works</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Delivery Details</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li>Free eBooks</li>
+                        <li>Development Tutorial</li>
+                        <li>How to - Blog</li>
+                        <li>Youtube Playlist</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="modal-view-profile" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('modal-view-profile')">&times;</span>
+        <h2>Thông tin cá nhân</h2>
+        <div class="profile-details">
+            <img src="" id="profile-modal-img" alt="Avatar">
+            <p><strong>Họ và tên:</strong> <span id="profile-modal-name"></span></p>
+            <p><strong>Email:</strong> <span id="profile-modal-email"></span></p>
+        </div>
+    </div>
+</div>
+
+<div id="modal-change-pass" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('modal-change-pass')">&times;</span>
+        <h2>Đổi mật khẩu</h2>
+        <form id="form-change-pass">
+            <div class="input-group">
+                <label>Mật khẩu cũ</label>
+                <input type="password" id="old-pass" required>
+            </div>
+            <div class="input-group">
+                <label>Mật khẩu mới</label>
+                <input type="password" id="new-pass" required>
+            </div>
+            <div class="input-group">
+                <label>Xác nhận mật khẩu mới</label>
+                <input type="password" id="confirm-new-pass" required>
+            </div>
+            <button type="submit" class="btn-save">Cập nhật mật khẩu</button>
+        </form>
+    </div>
+</div>
+</body>
+<script src="/page_Functions/dataDEMO.js"></script>
+<script src="/page_Functions/index.js"></script>
+
+</html>

@@ -1,0 +1,342 @@
+/* --- CƠ BẢN - GIỮ NGUYÊN --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- HEADER - GIỮ NGUYÊN --- */
+header {
+    height: 60px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 30px;
+}
+
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-right i {
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+.top-right img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+      .container {
+          display: flex;
+          padding: 30px;
+          gap: 30px;
+          min-height: calc(100vh - 60px);
+      }
+
+      /* SIDEBAR */
+      .sidebar a {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          width: 100%;
+          padding: 10px;
+          border-radius: 6px;
+          background: #e0ecff;
+          text-decoration: none;
+          color: blue;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          margin-bottom: 15px;
+          font-weight: 600;
+      }
+
+
+      .sidebar a:hover {
+          background: #c7dbff;
+      }
+
+      .sidebar i {
+          width: 25px;
+          color: white;
+          background-color: rgb(255, 61, 13);
+          border: 1px solid orange;
+      }
+
+      .content {
+          flex: 1;
+         
+      }
+
+.sidebar a:hover, .sidebar a.active {
+    background: #c7dbff; /* GIỮ NGUYÊN MÀU HOVER */
+}
+
+/* GIỮ NGUYÊN STYLE ICON CAM-VIỀN-CAM CỦA BẠN */
+.sidebar i {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(255, 61, 13);
+    border: 1px solid orange;
+    border-radius: 4px;
+}
+
+/* --- CONTENT AREA - SỬA LẠI ĐỂ CĂN GIỮA --- */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa tất cả nội dung bên trong content */
+    padding: 0;
+}
+
+/* --- 1. SEARCH BOX - SỬA LẠI ĐỂ CĂN GIỮA TRANG --- */
+.search-box-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Đưa search box ra chính giữa trang */
+    margin-bottom: 30px;
+}
+
+.search-box {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 500px; /* Độ rộng thanh search giống ảnh mẫu */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Shadow nhẹ cho search box */
+}
+
+.search-box i {
+    color: #888;
+    font-size: 16px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 15px;
+}
+
+.main-content-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 1000px; /* Thu gọn độ rộng bảng lại giống ảnh mẫu */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Thêm shadow nhẹ cho khối trắng */
+}
+
+/* --- TIÊU ĐỀ & FORM - GIỮ NGUYÊN STYLE --- */
+.top-bar {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; /* Căn giữa tiêu đề */
+}
+
+.top-bar h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    color: #333;
+}
+
+.add-category {
+    margin-bottom: 35px;
+    border-bottom: 1px solid #eee; /* Đường kẻ phân cách form và bảng */
+    padding-bottom: 30px;
+}
+
+.add-category label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #555;
+}
+
+.add-category input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#addBtn {
+    width: 100%;
+    padding: 12px;
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addBtn:hover {
+    background: #16a34a;
+}
+
+
+.category-list-header {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555;
+}
+
+.category-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 1px solid #eee; 
+}
+
+.category-table th,
+.category-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.category-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #555;
+}
+
+.btn-action {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    color: white;
+}
+
+.btn-edit { background-color: #ff9800; }
+.btn-delete { background-color: #f44336; }
+/* --- PHÂN TRANG (PAGINATION) --- */
+.pagination {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa các thành phần bên trong theo chiều dọc */
+    gap: 15px;               /* Khoảng cách giữa các nút */
+    margin-top: 30px;        /* Khoảng cách phía trên so với bảng */
+    width: 100%;             /* Đảm bảo chiếm hết chiều rộng để căn giữa */
+    padding-bottom: 20px;
+}
+
+.page-numbers {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Style cho các nút điều hướng (Prev/Next) */
+.page-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    color: #555;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.page-nav:hover:not(:disabled) {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+/* Style cho các nút số trang */
+.page-num {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #555;
+    transition: 0.3s;
+}
+
+
+.page-num.active {
+    background-color: #7f56d9; 
+    color: white;
+    border-color: #7f56d9;
+}
+
+.page-num:hover:not(.active) {
+    background-color: #f3f4f6;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #f5f5f5;
+}
+
+
+.page-numbers span {
+    color: #888;
+    padding: 0 5px;
+}
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+}
+

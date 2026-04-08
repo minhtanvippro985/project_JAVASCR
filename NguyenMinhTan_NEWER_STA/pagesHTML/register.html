@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - RIKKEI EDUCATION</title>
+    <link rel="stylesheet" href="/pageStyleSheets/register.css">
+    <link rel="stylesheet" href="/pageStyleSheets/responsive.css">
+</head>
+<body>
+
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    
+    <div class="wrapper">
+        <div class="content-left">
+            <h1 id="main-title">Welcome to the website</h1>
+            <p id="sub-title">RIKKEI EDUCATION</p>
+        </div>
+
+        <div class="form-card">
+            <form id="registerForm">
+                <div class="row">
+                    
+                    <div class="input-box">
+                        <input type="text" id="firstName-input" required>
+                        <label>First name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="lastName-Input">
+                        <label>Last name</label>
+                       
+                    </div>
+                </div>
+                
+                <div class="input-box full">
+                    <input type="email" id="email-Input" >
+                    <label>Email address</label>
+                    <p id ="email-err" style="color: red;" >*goes here</p>
+                </div>
+             
+
+                <div class="input-box full">
+                    <input type="password" id="password-Input">
+                    <label>Password</label>
+                     <p id ="password-err" style="color: red;" >*goes here</p>
+                </div>
+
+                <div class="input-box full">
+                    <input type="password" id="confirm-Input">
+                    <label>Confirm Password</label>
+                     <p id ="confirmp-err" style="color: red;" >*goes here</p>
+                </div>
+
+                <button type="submit" id="signup-submit">Sign up</button>
+
+                <p class="footer-text">
+                    Already have an account? <a href="/pagesHTML/login.html" id="m">login</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/page_Functions/register.js"></script>
+<script src="/page_Functions/dataDEMO.js"></script>
+</html>

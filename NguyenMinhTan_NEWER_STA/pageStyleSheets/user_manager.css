@@ -1,0 +1,234 @@
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: Arial, sans-serif;
+      }
+
+      header {
+          height: 60px;
+          background: white;
+          border-bottom: 1px solid #ddd;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding: 0 30px;
+      }
+
+      .top-right {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+      }
+
+      .top-right img {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+      }
+
+      .container {
+          display: flex;
+          padding: 30px;
+          gap: 30px;
+      }
+
+      .sidebar a {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          width: 100%;
+          padding: 10px;
+          border-radius: 6px;
+          background: #e0ecff;
+          text-decoration: none;
+          color: blue;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          margin-bottom: 15px;
+          font-weight: 600;
+      }
+
+      /* hover */
+      .sidebar a:hover {
+          background: #c7dbff;
+      }
+
+      /* icon */
+      .sidebar i {
+          width: 25px;
+          color: white;
+          background-color: rgb(255, 61, 13);
+          border: 1px solid orange;
+      }
+
+      /* content */
+      .content {
+          flex: 1;
+          background: white;
+          padding: 30px;
+          border-radius: 8px;
+      }
+
+     
+      /* Ví dụ CSS bổ sung */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.pagination span {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.pagination span.active {
+    background-color: #7f56d9;
+    color: white;
+    border-color: #7f56d9;
+}
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0; /* Đường kẻ mờ ngăn cách */
+}
+
+/* Tiêu đề Team members */
+#teamTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    display: flex;
+    align-items: center;
+}
+
+/* Số lượng users (giữ màu tím của bạn) */
+#userCount {
+    color: #7c3aed;
+    background-color: #f5f3ff;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+/* THANH SEARCH: Chỉnh lại cho giống Figma */
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    padding: 8px 16px;
+    border-radius: 8px; 
+    width: 300px;      
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.search-box:focus-within {
+    border-color: #7c3aed;
+}
+
+
+
+.block {
+    cursor: pointer;
+    transition: 0.2s;
+}
+.unblock {
+    cursor: pointer;
+    transition: 0.2s;
+}
+.block:hover, .unblock:hover {
+    filter: brightness(0.9);
+}
+    
+
+      .search-box input {
+          border: none;
+          outline: none;
+      }
+
+      /* table */
+      table {
+          width: 100%;
+          border-collapse: collapse;
+      }
+
+      thead {
+          text-align: left;
+      }
+
+      th,
+      td {
+          padding: 15px;
+          border-bottom: 1px solid #eee;
+      }
+
+      .user {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+      }
+
+      .user img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+      }
+
+      .user span {
+          color: gray;
+          font-size: 12px;
+      }
+
+      .block {
+          color: #7c3aed;
+          width: 56px;
+          height: 21px;
+          background-color: #ede5ff;
+          border: none;
+          border-radius: 10px;
+          font-weight: bold;
+      }
+
+      .unblock {
+          color: #234cff;
+          width: 75px;
+          height: 21px;
+          background-color: #e7edff;
+          border: none;
+          border-radius: 10px;
+          font-weight: bold;
+      }
+
+      /* pagination */
+      .pagination {
+          margin-top: 30px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .pagination button {
+          padding: 8px 16px;
+          border: 1px solid #ddd;
+          background: white;
+          border-radius: 6px;
+      }
+
+      .pages {
+          display: flex;
+          gap: 15px;
+      }

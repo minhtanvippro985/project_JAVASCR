@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.login-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    padding: 0 10%; 
+    gap: 40px;
+    background-color: #fff;
+}
+
+
+.illustration-section {
+    flex: 1.2; 
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.image-wrapper img {
+    max-width: 550px; 
+    width: 100%;
+    height: auto;
+}
+.form-section {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.social-signin {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    background-color: #0d6efd;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.divider {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    color: #555;
+    margin-top: 5px;
+}
+
+
+.login-btn {
+    width: 100%; 
+    max-width: 150px; 
+    padding: 12px;
+    background-color: #2b78f2;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0b5ed7;
+}
+
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.register-text a {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #0d6efd;
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-icons a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+

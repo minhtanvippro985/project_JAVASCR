@@ -1,0 +1,166 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/pageStyleSheets/myarticlepage.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/assets/imagers/icon.png" alt="logo"  id = "headerbutton" >
+                <span>RIKKEI_EDU_BLOG</span>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search for articles" id="search-article-input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header-right" id="header-auth-section">
+
+                <div class="user-profile">
+                    <img src="/assets/imagers/user_PFP.png" alt="Avatar" class="avatar-img" id="user-avatar">
+                    <div class="dropdown-menu">
+                        <div class="user-info">
+                            <img src="/assets/imagers/user_PFP.png" alt="Avatar" id="user-dropdown-ava">
+                            <div>
+                                <strong>Rikkei</strong>
+                                <p>rikkei@gmail.com</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <ul>
+                            <li>View profile</li>
+                           <li><a href="#" style="text-decoration: none;">Update profile picture</a></li>
+                            <li><a href="#" style="text-decoration: none;">Change password</a></li>
+                  
+                            <li class="logout" id="logout-btn">Log out</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+    <section class="add-article-section">
+        <h2 class="section-title" id="add-new-btn" >ADD NEW ARTICLE</h2>
+
+    </section>
+
+    <section class="article-grid" id="article-list-container">
+        <div class="article-card">
+            <img src="/assets/imagers/workday.png" alt="post">
+            <div class="card-body">
+                <span class="post-date">Date: 2025-02-25</span>
+                <h3>A Productive Day at Work <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+                <p>Today was a really productive day... I managed to finish a report ahead of schedule.</p>
+                <div class="card-footer">
+                    <span class="category-tag">Daily Journal</span>
+                    <a href="#" class="edit-link">Edit your post</a>
+                </div>
+            </div>
+        </div>
+        <div class="article-card">
+            <img src="/assets/imagers/job.jpg" alt="post">
+            <div class="card-body">
+                <span class="post-date">Date: 2025-02-25</span>
+                <h3>My First Job Interview Experience <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+                <p>I had my first job interview today! I was nervous at first, but as the conversation went on, I
+                    felt more confident. </p>
+                <div class="card-footer">
+                    <span class="category-tag">Work & Career</span>
+                    <a href="#" class="edit-link">Edit your post</a>
+                </div>
+            </div>
+        </div>
+        <div class="article-card">
+            <img src="/assets/imagers/overthink.png" alt="post">
+            <div class="card-body">
+                <span class="post-date">Date: 2025-02-25</span>
+                <h3>Overthinking Everything<i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptate quidem rerum hic ipsam
+                    cupiditate doloribus nam minima autem ut, incidunt dolore dignissimos similique harum, corrupti
+                    quos iure natus voluptatibus!</p>
+                <div class="card-footer">
+                    <span class="category-tag">Daily Journal</span>
+                    <a href="#" class="edit-link">Edit your post</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<section class="pagination">
+    <button class="page-nav" id="prev-page"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+    <!-- <div class="page-numbers" id="pagination-numbers">
+         <button class="page-num active">1</button>
+            <button class="page-num">2</button>
+            <button class="page-num">3</button>
+            <span>...</span>
+            <button class="page-num">10</button>
+    </div> -->
+    <button class="page-nav" id="next-page">Next <i class="fa-solid fa-arrow-right"></i></button>
+    
+</section> 
+<footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>MY BLOG</h2>
+                </div>
+
+                <div class="footer-column about">
+                    <h3>About Rareblocks</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta
+                        lectus ridiculus in mattis.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Works</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Delivery Details</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li>Free eBooks</li>
+                        <li>Development Tutorial</li>
+                        <li>How to - Blog</li>
+                        <li>Youtube Playlist</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script src="/page_Functions/dataDEMO.js"></script>
+<script src="/page_Functions/my_articlePAGE.js"></script>

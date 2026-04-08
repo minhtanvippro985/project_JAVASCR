@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý bài viết</title>
+
+    <link rel="stylesheet" href="/pageStyleSheets/article_mananger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    
+    <header id="header">
+        <div class="top-right" id="topRight">
+            <i class="fa-regular fa-envelope" id="iconMail"></i>
+            <i class="fa-regular fa-bell" id="iconBell"></i>
+            <img src="https://i.pravatar.cc/40" alt="" id="avatar">
+        </div>
+    </header>
+       
+ 
+ 
+    <div class="container">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <a href="./user_mananger.html">
+                <i class="fa-solid fa-users"></i> Manage Users
+            </a>
+            <a href="./entries_manager.html">
+                <i class="fa-solid fa-table-list"></i> Manage Entries
+            </a>
+            <a href="./article_mananger_ADMIN.html" class="active">
+                <i class="fa-solid fa-newspaper"></i> Manage Article
+            </a>`
+            <a id = "logout-btn" href="#">
+                <i class="fa-solid fa-right-from-bracket"></i> Log out
+            </a>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="content">
+
+            <!-- Top Section: Tiêu đề và Nút Thêm (hai đầu, thẳng hàng) -->
+            <div class="top-section">
+                <button class="add-btn" id="add-Article-Btn">
+                    <i class="fa-solid fa-plus"></i> Thêm mới bài viết
+                </button>
+                <h1 class="page-title">Quản lý bài viết</h1>
+                
+            </div>
+
+            <!-- Bảng -->
+            <div class="table-wrapper">
+                <table class="article-table">
+                    <thead>
+                        <tr>
+                            <th>Ảnh</th>
+                            <th>Tiêu đề</th>
+                            <th>Chủ đề</th>
+                            <th>Nội dung</th>
+                            <th>Trạng thái</th>
+                            <th>Chỉnh sửa trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://picsum.photos/300/200?random=1" alt=""></td>
+                            <td>Học nấu cá sốt cà chua</td>
+                            <td>Nấu ăn</td>
+                            <td>tôi đã học được cách nấu ăn...</td>
+                            <td><span class="status public">Public</span></td>
+                            <td>
+                                <select class="status-select">
+                                    <option selected>Public</option>
+                                    <option>Private</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button class="edit-btn">Sửa</button>
+                                <button class="delete-btn">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://picsum.photos/300/200?random=2" alt=""></td>
+                            <td>Bí kíp viết CV ngành IT</td>
+                            <td>IT</td>
+                            <td>Chia sẻ cách viết CV ấn tượng...</td>
+                            <td><span class="status private">Private</span></td>
+                            <td>
+                                <select class="status-select">
+                                    <option>Public</option>
+                                    <option selected>Private</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button class="edit-btn">Sửa</button>
+                                <button class="delete-btn">Xóa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn"><i class="fa-solid fa-chevron-left"></i> Previous</button>
+                <div class="page-numbers">
+                    <span class="page active">1</span>
+                    <span class="page">2</span>
+                    <span class="page">3</span>
+                    <!-- <span>...</span> -->
+                    <span class="page">8</span>
+                    <span class="page">9</span>
+                    <span class="page">10</span>
+                </div>
+                <button class="page-btn">Next <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </main>
+    </div>
+
+</body>
+<script src="/page_Functions/article_mananger.js"></script>
+</html>

@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/pageStyleSheets/login.css">
+    <link rel="stylesheet" href="/pageStyleSheets/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    
+    <main class="login-container">
+        <section class="illustration-section">
+            <div class="image-wrapper">
+                <img src="/assets/imagers/draw2.webp.png" alt="Login Illustration">
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="social-signin">
+                <span>Sign in with</span>
+                <div class="social-icons">
+                    <a href="#" class="icon fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon tw"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icon ln"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+         
+            <div class="divider">
+                <span>Or</span>
+            </div>
+
+            <form>
+                <div class="input-group">
+                    <input type="email" placeholder="Enter a valid email address"  id ="email-input">
+                    <label>Email address</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" placeholder="Enter password"  id ="password-input">
+                    <label>Password</label>
+                     
+                </div>
+               <p style="color: red; display: none;" id ="error-msg">*Sai mật khẩu hoặc email</p>
+               <button type="submit" class="login-btn" id ="login-btn">Login</button>
+           
+                <p class="register-text">
+                    Don't have an account? <a href="/pagesHTML/register.html">Register</a>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright © 2025. All rights reserved.</p>
+        <div class="footer-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+</body>
+<script src="/page_Functions/login.js"></script>
+<script src="/page_Functions/dataDEMO.js"></script>
+</html>

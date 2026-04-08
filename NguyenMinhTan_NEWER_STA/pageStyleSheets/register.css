@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #0e1628; 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.blob-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    content:url(/assets/imagers/registers.png);
+    object-fit: cover;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, #9d00ff 0%, #4a0080 70%);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+.blob-1 {
+    width: 250px;
+    height: 250px;
+    top: 5%;
+    left: 25%;
+}
+
+.blob-2 {
+    width: 350px;
+    height: 350px;
+    bottom: -50px;
+    right: -50px;
+}
+
+
+.wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.content-left {
+    flex: 1;
+    color: white;
+}
+
+.content-left h1 {
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+    line-height: 1.2;
+}
+
+.content-left p {
+    font-size: 0.9rem;
+    color: #a0aec0;
+}
+
+
+.form-card {
+    background-color: #e9ecef;
+    padding: 40px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.input-box.full {
+    width: 100%;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 15px;
+}
+
+.input-box label {
+    display: block;
+    font-size: 13px;
+    color: #444;
+    margin-top: 5px;
+}
+
+#signup-submit {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+   
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-text a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+

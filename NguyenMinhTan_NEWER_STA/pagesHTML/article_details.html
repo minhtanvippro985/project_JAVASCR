@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Component</title>
+    <link rel="stylesheet" href="/pageStyleSheets/article_details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+<body>
+<body>
+<div class="post-container" id="post-container">
+    <button class="back-btn" id="btn-back">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="post-main">
+        <img src="/assets/imagers/user_PFP.png" alt="Avatar" class="avatar">
+        
+        <div class="post-content-card">
+            <h2 class="post-title">A Productive Day at Work</h2>
+            <p class="post-text">
+                Today was a really productive day at work. I managed to finish a report ahead of schedule and received positive feedback from my manager. After work, I went for a walk in the park, enjoying the fresh air. Looking forward to another great day tomorrow!
+            </p>
+            
+            <div class="post-actions">
+                <span class="action-item">15 Like <i class="fa-regular fa-thumbs-up"></i></span>
+                <span class="action-item">6 Replies <i class="fa-regular fa-comment"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="comments-section">
+        <button class="view-more-btn" id="btn-view-comments">
+            View all 12 comments <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <div class="comments-list" id="comments-list">
+            <div class="comment-item">
+                <img src="/assets/imagers/user_PFP.png" alt="User" class="avatar-small">
+                <div class="comment-bubble">
+                    <p class="comment-text">very good!</p>
+                    <div class="comment-actions">
+                        <span>15 Like <i class="fa-regular fa-thumbs-up"></i></span>
+                        <span>6 Replies <i class="fa-regular fa-comment"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment-item">
+                <img src="/assets/imagers/user_PFP.png" alt="User" class="avatar-small">
+                <div class="comment-bubble">
+                    <p class="comment-text">hello rikkei!</p>
+                    <div class="comment-actions">
+                        <span>15 Like <i class="fa-regular fa-thumbs-up"></i></span>
+                        <span>6 Replies <i class="fa-regular fa-comment"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comment-input-area" style="margin-top: 20px; display: flex; gap: 10px;">
+    <input type="text" id="input-comment" placeholder="Viết bình luận..." 
+           style="flex: 1; padding: 10px; border-radius: 20px; border: 1px solid #ddd; outline: none;">
+    <button id="btn-send-comment" 
+            style="background: #7c3aed; color: white; border: none; padding: 8px 15px; border-radius: 20px; cursor: pointer;">
+        Gửi
+    </button>
+</div>
+</div>
+        
+</body>
+<script src="/page_Functions/dataDEMO.js"></script>
+<script src="/page_Functions/article_detial.js"></script>
+</html>

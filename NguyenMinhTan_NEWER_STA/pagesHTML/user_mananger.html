@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title id="pageTitle">Manage Users</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/pageStyleSheets/user_manager.css" id="mainCss">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body id="body">
+
+    <!-- ================= HEADER ================= -->
+    <header id="header">
+        <div class="top-right" id="topRight">
+            <i class="fa-regular fa-envelope" id="iconMail"></i>
+            <i class="fa-regular fa-bell" id="iconBell"></i>
+            <img src="https://i.pravatar.cc/40" alt="" id="avatar">
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTAINER ================= -->
+    <div class="container" id="container">
+
+        <!-- ===== SIDEBAR ===== -->
+     <aside class="sidebar" id="sidebar">
+    <div class="sidebar-menu">
+        <a href="./user_mananger.html" class="active">
+            <i class="fa-solid fa-users"></i> Manage Users
+        </a>
+        <a href="./entries_manager.html">
+            <i class="fa-solid fa-table-list"></i> Manage Entries
+        </a>
+        <a href="./article_mananger_ADMIN.html">
+            <i class="fa-solid fa-newspaper"></i> Manage Article
+        </a>
+    </div>
+    <div class="sidebar-footer">
+        <!-- <a href="/pagesHTML/login.html" id="btnLogout"> -->
+        <a href="#" id="btnLogout">
+            <i class="fa-solid fa-right-from-bracket"></i> Log out
+        </a>
+    </div>
+</aside>
+        <!-- ===== CONTENT ===== -->
+        <main class="content" id="content">
+
+            <!-- TOP BAR -->
+            <div class="top-bar" id="topBar">
+                <h3 id="teamTitle">
+                    Team members <span id="userCount">100 users</span>
+                </h3>
+
+                <div class="search-box" id="searchBox">
+                    <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                    <input type="text" id="searchInput" placeholder="Search user">
+                </div>
+            </div>
+
+            <!-- ===== TABLE ===== -->
+            <table id="userTable">
+
+                <!-- TABLE HEADER -->
+                <thead id="tableHead">
+                    <tr id="tableHeaderRow">
+                        <th id="colName">Name<i class="fa-solid fa-sort-alpha-down" id="sortNameIcon" style="cursor: pointer; margin-left: 8px;" title="Sắp xếp A-Z"></i></th>
+                        <th id="colStatus">Status </th>
+                        <th id="colEmail">Email address</th>
+                        <th id="colAction">Actions</th>
+                    </tr>
+                </thead>
+
+                <!-- TABLE BODY -->
+                <tbody id="tableBody">
+
+                    <!-- USER ROW 1 -->
+                    <tr id="userRow-1">
+                        <td>
+                            <div class="user" id="userInfo-1">
+                                <img src="https://i.pravatar.cc/35?img=1" id="userImg-1">
+                                <div>
+                                    <p id="userName-1">Olivia Rhye</p>
+                                    <span id="userUsername-1">@olivia</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td id="userStatus-1">hoạt động</td>
+                        <td id="userEmail-1">olivia@untitledui.com</td>
+                        <td id="userAction-1">
+                            <button class="block">block</button>
+                            <button class="unblock">unblock</a>
+                        </td>
+                    </tr>
+
+                    <!-- USER ROW 2 -->
+                    <tr id=" userRow-2">
+                        <td>
+                            <div class="user" id="userInfo-2">
+                                <img src="https://i.pravatar.cc/35?img=2" id="userImg-2">
+                                <div>
+                                    <p id="userName-2">Phoenix Baker</p>
+                                    <span id="userUsername-2">@phoenix</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td id="userStatus-2">hoạt động</td>
+                        <td id="userEmail-2">phoenix@untitledui.com</td>
+                        <td id="userAction-2">
+                            <button class="block">block</button>
+                            <button class="unblock">unblock</a>
+                        </td>
+                    </tr>
+
+                    <!-- USER ROW 3 -->
+                    <tr id="userRow-3">
+                        <td>
+                            <div class="user" id="userInfo-3">
+                                <img src="https://i.pravatar.cc/35?img=3" id="userImg-3">
+                                <div>
+                                    <p id="userName-3">Lana Steiner</p>
+                                    <span id="userUsername-3">@lana</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td id="userStatus-3">hoạt động</td>
+                        <td id="userEmail-3">lana@untitledui.com</td>
+                        <td id="userAction-3">
+                            <button class="block">block</button>
+                            <button class="unblock">unblock</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <!-- ===== PAGINATION ===== -->
+            <div class="pagination" id="pagination">
+
+                <button id="prevBtn">Previous</button>
+
+                <div class="pages" id="pages">
+                    <span id="page-1">1</span>
+                    <span id="page-2">2</span>
+                    <span id="page-3">3</span>
+                    <span id="dots">...</span>
+                    <span id="page-10">10</span>
+                </div>
+
+                <button id="nextBtn">Next</button>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+<script src="/page_Functions/dataDEMO.js"></script>
+<script src="/page_Functions/user_mananger.js"></script>
+</html>

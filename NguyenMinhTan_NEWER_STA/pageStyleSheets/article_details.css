@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.post-container {
+    width: 100%;
+    max-width: 900px;
+    background: transparent;
+    position: relative; /* Làm gốc tọa độ cho các đường kẻ dọc */
+}
+
+/* Nút quay lại */
+.back-btn {
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+/* PHẦN BÀI VIẾT CHÍNH */
+.post-main {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+/* Đường kẻ dọc nối từ avatar chính xuống dưới */
+.post-main::before {
+    content: "";
+    position: absolute;
+    top: 45px; /* Bắt đầu từ dưới avatar (45px) */
+    left: 22.5px; /* Căn giữa avatar (45px / 2) */
+    width: 2px;
+    height: calc(100% + 20px); /* Kéo dài qua khoảng trống của post */
+    background-color: #ced0d4; 
+    z-index: 1;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2; /* Nổi lên trên đường kẻ */
+}
+
+.post-content-card {
+    background: white; /* Đổi sang trắng cho nổi bật như hình */
+    border: 1px solid #eef2f4;
+    border-radius: 12px;
+    padding: 20px;
+    flex-grow: 1;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.post-title {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #1c1e21;
+}
+
+.post-text {
+    line-height: 1.5;
+    color: #1c1e21;
+    font-weight: 400;
+}
+
+/* PHẦN BÌNH LUẬN */
+.comments-section {
+    padding-left: 60px; /* Thụt vào để thẳng hàng với card nội dung */
+    position: relative;
+}
+
+.view-more-btn {
+    background: none;
+    border: none;
+    color: #007b5e; 
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px 0 15px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.comment-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* Đường kẻ dọc cho từng item bình luận */
+.comment-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -37.5px; /* (60px lề - 22.5px tâm đường kẻ) */
+    width: 2px;
+    height: 100%;
+    background-color: #ced0d4;
+    z-index: 1;
+}
+
+/* Ẩn đoạn thừa của đường kẻ ở bình luận cuối cùng */
+.comment-item:last-child::before {
+    height: 18px; /* Chỉ dài đến giữa avatar cuối */
+}
+
+.avatar-small {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    border: 2px solid #f0f2f5; /* Tạo viền trùng màu nền để cắt đường kẻ */
+}
+
+.comment-bubble {
+    background: #f8fafb;
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 1px solid #eef2f4;
+    flex-grow: 1;
+}
+
+.comment-text {
+    margin: 0 0 8px 0;
+    font-size: 0.95rem;
+    color: #1c1e21;
+}
+
+/* ACTIONS (LIKE/REPLY) */
+.post-actions, .comment-actions {
+    display: flex;
+    gap: 15px;
+    font-size: 0.85rem;
+    color: #65676b;
+}
+
+.action-item, .comment-actions span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.action-item:hover, .comment-actions span:hover {
+    text-decoration: underline;
+}
+
+i {
+    font-size: 1rem;
+}
